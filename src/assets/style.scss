@@ -1,3 +1,7 @@
+.body {
+  text-align: center;
+}
+
 .title {
   color: blue;
   font-weight: bold;
@@ -37,9 +41,9 @@
 
 
 .header {
-  max-width: calc(100% - 600px);
+  max-width: calc(100%);
   margin: 0 auto;
-  height: 120px;
+  height: 125px;
 
   .logo {
     height: 150px;
@@ -115,11 +119,6 @@
   height: 600px;
   width: 100%;
   color: white;
-
-  .content {
-    margin: 100px 300px 100px 300px;
-    // line-height: 200px;
-  }
 }
 
 .main-body {
@@ -127,15 +126,13 @@
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
-  padding: 0px 300px 0px 300px;
+  // padding: 0px 300px 0px 300px;
 
   .content {
     color: grey;
     font-size: 15px;
     text-align: center;
-    padding: 0px 100px 0px 100px;
     margin-bottom: 50px;
-    letter-spacing: -0.5px;
   }
 
   .card-container {
@@ -147,13 +144,18 @@
       align-items: center;
       text-align: center;
       padding: 40px 20px 40px 20px;
-      width: 250px;
+      width: 100%;
 
       &:hover {
         border: 3px;
         box-shadow: 3px 3px 60px 6px rgb(179, 179, 208);
         border-radius: 5px;
       }
+    }
+  }
+  @media screen and (max-width:450px) {
+    .card-container{
+      flex-direction: column;
     }
   }
 }
@@ -195,7 +197,7 @@
         padding: 25px;
         background-color: white;
         border-radius: 8px;
-        margin-right: 30px;
+        // margin-right: 30px;
         width: 450px;
 
         .icon {
@@ -223,7 +225,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 150px 300px 0px 300px;
+  margin-top: 150px;
 
   .list-items {
     text-align: start;
@@ -249,6 +251,11 @@
     }
   }
 }
+@media screen and (max-width:450px) {
+  .about-us{
+    flex-direction: column;
+  }
+}
 
 .img-ss::before {
   content: "";
@@ -271,7 +278,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 300px 0px 300px;
 
   .process-steps {
     display: flex;
@@ -307,17 +313,19 @@
   height: 500px;
   width: 100%;
   margin-top: 150px;
+  position: absolute;
 
   .start {
     height: 250px;
     width: auto;
     background-color: rgb(53, 122, 226);
     position: relative;
-    margin: -75px 300px 0px 300px;
+    margin-top: -75px;
     border-radius: 10px;
   }
 
   .copyright {
+    background-color: #3f3f3f;
     color: grey;
     display: flex;
     justify-content: center;
