@@ -13,8 +13,14 @@ import {
   faPen,
   faShareSquare,
   faSpaceShuttle,
-  faLongArrowAltRight
-} from '@fortawesome/free-solid-svg-icons'
+  faLongArrowAltRight,
+  faFont,
+  faKiwiBird,
+  faCamera,
+  faVideo,
+  faArrowDown,
+  faChevronDown
+} from '@fortawesome/free-solid-svg-icons';
 
 
 function Layout(props) {
@@ -101,7 +107,7 @@ function Layout(props) {
             </div>
             <div className="container">
               <div className="card-container container-fluid">
-                <div className="card-block col-6 mx-4">
+                <div className="card-block col-md-6 col-12">
                   <div><FontAwesomeIcon className="icon" icon={faBook} /></div>
                   <div><p><b>For individuals</b></p></div>
                   <p className="card-content">
@@ -111,7 +117,7 @@ function Layout(props) {
                     what truly matters.
                 </p>
                 </div>
-                <div className="card-block col-6 mx-4">
+                <div className="card-block col-md-6 col-12">
                   <div><FontAwesomeIcon className="icon" icon={faLaptop} /></div>
                   <div><p><b>For small & medium business</b></p></div>
                   <p className="card-content">
@@ -125,7 +131,7 @@ function Layout(props) {
       </div>
       <div className="container">
         <div className="about-us">
-          <div className="list-items col-6">
+          <div className="list-items col-md-6 col-12">
             <p className="title">ABOUT US</p>
             <p className="heading">Our promise to continue <b>innovating</b></p>
             <li className="card-content mb-3 text-left">Stops document such as contracts being modified after you've signed them</li>
@@ -139,7 +145,7 @@ function Layout(props) {
             </div>
           </div>
           <div className="col-2 col-sm-0"></div>
-          <div className="functional-item col-4 ">
+          <div className="functional-item col-md-4 col-12">
             <div className="item">
               <div className="circled-item bg-warning">
                 <FontAwesomeIcon icon={faHandPointUp} />
@@ -240,8 +246,8 @@ function Layout(props) {
 
 
       <div className="footer">
-        <div className="start d-flex align-items-center justify-content-around container">
-          <div className="d-flex align-items-center">
+        <div className="start container">
+          <div className="d-flex align-items-center content">
             <div className="circled-item bg-light mr-3">
               <FontAwesomeIcon icon={faSpaceShuttle} className="fa-rotate-270" />
             </div>
@@ -252,6 +258,60 @@ function Layout(props) {
           </div>
           <button className="btn btn-success">Get Started <FontAwesomeIcon icon={faLongArrowAltRight} /></button>
         </div>
+        <div className="container">
+          <div className="my-5 mx-0 px-0 footer_data d-flex flex-wrap">
+            <div className="col-md-2 col-6">
+              <div className="text-white"><p><b>iEsign</b></p></div>
+              <p className="text-secondary">How It Works</p>
+              <p className="text-secondary">Fetures</p>
+              <p className="text-secondary">Pricing</p>
+              <p className="text-secondary">About Us</p>
+            </div>
+            <div className="col-md-2 col-6">
+              <div className="text-white"><p><b>iEsign</b></p></div>
+              <p className="text-secondary">How It Works</p>
+              <p className="text-secondary">Fetures</p>
+              <p className="text-secondary">Pricing</p>
+              <p className="text-secondary">About Us</p>
+            </div>
+            <div className="col-md-2 col-6">
+              <div className="text-white"><p><b>iEsign</b></p></div>
+              <p className="text-secondary">How It Works</p>
+              <p className="text-secondary">Fetures</p>
+              <p className="text-secondary">Pricing</p>
+              <p className="text-secondary">About Us</p>
+            </div>
+            <div className="col-md-2 col-6">
+              <div className="text-white"><p><b>iEsign</b></p></div>
+              <p className="text-secondary">How It Works</p>
+              <p className="text-secondary">Fetures</p>
+              <p className="text-secondary">Pricing</p>
+              <p className="text-secondary">About Us</p>
+            </div>
+            <div className="col-md-3 col-6">
+              <div className="text-white"><p><b>iEsign</b></p></div>
+              <div className="d-flex">
+                <div className="col-3 mr-3 px-4 py-3 bg-dark text-white">
+                  <FontAwesomeIcon icon={faVideo} />
+                </div>
+                <div className="col-3 mr-3 px-4 py-3 bg-dark text-white">
+                  <FontAwesomeIcon icon={faVideo} />
+                </div>
+                <div className="col-3 mr-3 px-4 py-3 bg-dark text-white">
+                  <FontAwesomeIcon icon={faVideo} />
+                </div>
+                <div className="col-3 mr-3 px-4 py-3 bg-dark text-white">
+                  <FontAwesomeIcon icon={faVideo} />
+                </div>
+              </div>
+              <div className="text-secondary d-flex justify-content-around align-items-center py-2 rounded mt-4 border border-secondary">
+                <div>International</div>
+                <FontAwesomeIcon icon={faChevronDown} />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="copyright">
           <p>@ 2021 Copyright iEsign. Allrights reserved  </p>
         </div>
