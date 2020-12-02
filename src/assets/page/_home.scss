@@ -1,114 +1,4 @@
-.body {
-  text-align: center;
-}
-
-.title {
-  color: blue;
-  font-weight: bold;
-}
-
-.main-heading {
-  color: white;
-  font-size: 50px;
-}
-
-.heading {
-  color: black;
-  font-size: 35px;
-}
-
-.icon {
-  font-size: 75px;
-  margin-bottom: 25px;
-}
-
-.card-content {
-  color: grey;
-  font-size: 15px;
-  text-align: center;
-  letter-spacing: -0.5px;
-}
-
-.circled-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 100px;
-  border-radius: percentage($number: 100);
-  font-size: 20px;
-}
-
-
-.header {
-  max-width: calc(100%);
-  margin: 0 auto;
-  height: 125px;
-
-  .logo {
-    height: 150px;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-  .nav-box-list {
-    flex-wrap: wrap;
-  }
-
-  .nav-box-list-item {
-    list-style-type: none;
-    margin-right: 42px;
-    position: relative;
-  }
-
-  .nav-box-list-item.active span {
-    background-color: blue;
-    width: 100%;
-    height: 2px;
-    display: block;
-    position: absolute;
-    bottom: 5px;
-    top: 16px;
-    z-index: 1;
-  }
-
-  .nav-box-list-item.active:after {
-    content: '';
-    position: absolute;
-    background-image: url('../images/Pen.png');
-    height: 29px;
-    width: 19px;
-    left: 50%;
-    top: 48px;
-    transform: translateX(-50%);
-  }
-
-  .nav-box-list-item a {
-    position: relative;
-    text-decoration: none;
-    color: black;
-    z-index: 2;
-  }
-
-  .nav-box-list-item:last-child {
-    margin-right: unset;
-  }
-
-
-  @media screen and (max-width:450px) {
-    .nav-box-list-item.active:after {
-      left: 125%;
-      top: unset;
-      transform: rotate(-90deg);
-    }
-  }
-
-  @media screen and (min-width:760px) and (max-width:770px) {
-    .nav-box-list-item.active:after {
-      display: none;
-    }
-  }
-}
+@import '../components/header.scss';
 
 .img-container::before {
   content: "";
@@ -120,7 +10,7 @@
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(0deg, rgba(0, 8, 46, 0.5), rgba(0, 10, 54, 0.5)),
-    url("../images/readBook.png");
+    url("../../images/readBook.png");
 }
 
 .img-container {
@@ -129,7 +19,6 @@
   position: relative;
   height: 600px;
   width: 100%;
-  color: white;
 }
 
 .main-body {
@@ -139,7 +28,6 @@
   margin-top: 100px;
 
   .content {
-    color: grey;
     font-size: 15px;
     text-align: center;
     margin-bottom: 50px;
@@ -155,12 +43,6 @@
       text-align: center;
       padding: 40px 20px 40px 20px;
       width: 100%;
-
-      &:hover {
-        border: 3px;
-        box-shadow: 3px 3px 60px 6px rgb(179, 179, 208);
-        border-radius: 5px;
-      }
     }
   }
 
@@ -193,7 +75,6 @@
     position: relative;
     height: 350px;
     width: 95%;
-    color: #1a1669;
 
     .card-container {
       display: flex;
@@ -206,7 +87,6 @@
         flex-direction: column;
         align-items: center;
         padding: 25px;
-        background-color: white;
         border-radius: 8px;
         margin-right: 15px;
         margin-left: 15px;
@@ -216,17 +96,6 @@
           font-size: 75px;
           margin-bottom: 25px;
         }
-
-        .card-content {
-          color: grey;
-          font-size: 15px;
-          text-align: center;
-        }
-
-        &:hover {
-          border: 3px;
-          box-shadow: 3px 3px 60px 6px rgb(179, 179, 208);
-        }
       }
     }
 
@@ -235,18 +104,14 @@
         flex-direction: column;
         margin-left: auto;
 
-        // width: fit-content;
-
         .card-block {
-          // margin-bottom: 25px;
-          margin: 0px;
+          margin: 0px 0px 30px 0px;
         }
       }
     }
 
   }
 }
-
 
 .about-us {
   display: flex;
@@ -257,6 +122,21 @@
   .list-items {
     text-align: start;
     width: 400px;
+
+    li {
+      list-style-type: none;
+    }
+
+    li:before {
+      content: '';
+      display: inline-block;
+      height: 12px;
+      width: 15px;
+      background-size: 13px;
+      background-image: url("../../images/Pen.png");
+      background-repeat: no-repeat;
+      margin-right: 5px;
+    }
   }
 
   .functional-item {
@@ -324,7 +204,7 @@
     }
 
     .step-after::before {
-      content: url('../images/angle-double-right-solid.svg');
+      content: url('../../images/angle-double-right-solid.svg');
       width: 25px;
       margin-top: 50px;
     }
@@ -353,21 +233,19 @@
       .step-after::before {
         transform: rotate(90deg);
         transform-origin: 50% 50%;
+        margin-top: unset;
       }
 
       .step-after {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        .step {}
       }
     }
   }
 }
 
 .footer {
-  background-color: rgb(66, 63, 63);
   width: 100%;
   margin-top: 150px;
   position: absolute;
@@ -378,18 +256,11 @@
     justify-content: space-around;
     height: 250px;
     width: auto;
-    background-color: rgb(53, 122, 226);
     position: relative;
     margin-top: -75px;
     border-radius: 10px;
 
   }
-
-  // .content {
-  //   display: flex;
-  //   justify-content: space-around;
-  //   text-align: center;
-  // }
 
   @media screen and (max-width:450px) {
     .start {
@@ -411,13 +282,11 @@
   }
 
   .copyright {
-    background-color: #3f3f3f;
-    color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-    box-shadow: 0px -15px 15px 0px rgb(72, 72, 72);
+    box-shadow: 0px -15px 40px 0px $color-graydark4;
   }
 }

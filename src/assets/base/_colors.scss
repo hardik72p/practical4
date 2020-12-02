@@ -1,0 +1,129 @@
+    @import '../abstract/variables';
+
+    .text {
+      &-primary {
+        color: $color-primary !important;
+
+        &:hover {
+          color: $color-primary !important;
+        }
+      }
+
+      &-primary2 {
+        color: $color-primary2 !important;
+      }
+
+      &-primary3 {
+        color: $color-primary3 !important;
+      }
+
+      &-graydark {
+        color: $color-graydark !important;
+      }
+
+      &-graydark2 {
+        color: $color-graydark2 !important;
+      }
+
+      &-graydark3 {
+        color: $color-graydark3 !important;
+      }
+
+      &-graylight {
+        color: $color-graylight !important;
+      }
+
+      &-graylight2 {
+        color: $color-graylight2 !important;
+      }
+
+      &-white {
+        color: $color-white !important;
+      }
+
+      &-offwhite {
+        color: $color-offwhite !important;
+      }
+
+      &-pink {
+        color: $color-pink !important;
+      }
+
+      &-orange {
+        color: $color-orange !important;
+      }
+
+      &-yellow {
+        color: $color-yellow !important;
+      }
+
+      &-green {
+        color: $color-green !important;
+      }
+
+      &-green2 {
+        color: $color-green2 !important;
+      }
+    }
+
+    .bg {
+      &-primary {
+        background-color: $color-primary !important;
+      }
+
+      &-primary2 {
+        background-color: $color-primary2 !important;
+      }
+
+      &-primary3 {
+        background-color: $color-primary3 !important;
+      }
+
+      &-graydark {
+        background-color: $color-graydark !important;
+      }
+
+      &-graydark2 {
+        background-color: $color-graydark2 !important;
+      }
+
+      &-graydark3 {
+        background-color: $color-graydark3 !important;
+      }
+
+      &-graylight {
+        background-color: $color-graylight !important;
+      }
+
+      &-graylight2 {
+        background-color: $color-graylight2 !important;
+      }
+
+      &-white {
+        background-color: $color-white !important;
+      }
+
+      &-offwhite {
+        background-color: $color-offwhite !important;
+      }
+
+      &-pink {
+        background-color: $color-pink !important;
+      }
+
+      &-orange {
+        background-color: $color-orange !important;
+      }
+
+      &-yellow {
+        background-color: $color-yellow !important;
+      }
+
+      &-green {
+        background-color: $color-green !important;
+      }
+
+      &-green2 {
+        background-color: $color-green2 !important;
+      }
+    }

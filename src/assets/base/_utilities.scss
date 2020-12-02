@@ -1,0 +1,53 @@
+.body {
+  text-align: center;
+}
+
+.article {
+  color: $color-graylight;
+}
+
+.title {
+  color: $color-primary;
+  font-weight: 800;
+}
+
+.main-heading {
+  color: $color-white;
+  font-size: 50px;
+}
+
+.heading {
+  color:$color-graydark3 ;
+  font-size: 35px;
+}
+
+.icon {
+  font-size: 75px;
+  margin-bottom: 25px;
+}
+
+.card-content {
+  color: $color-graylight;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.circled-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: percentage($number: 100);
+  font-size: 20px;
+}
+
+.card-block {
+  &:hover {
+    border: 3px;
+    box-shadow: 3px 3px 60px 6px $color-graylight2;
+    border-radius: 10px;
+  }
+}
+
